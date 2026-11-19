@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 Page Not Found — NEXORA</title>
+  <meta name="description" content="The page you are looking for does not exist or has been moved." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="preloader" aria-hidden="true">
+    <div class="preloader-logo">NEXORA</div>
+    <div class="preloader-bar"><div class="preloader-progress"></div></div>
+  </div>
+  <div class="custom-cursor" aria-hidden="true"></div>
+  <div class="custom-cursor-dot" aria-hidden="true"></div>
+
+  <main style="min-height:100vh; display:flex; align-items:center; justify-content:center; text-align:center; padding:2rem;" class="bg-grid-pattern">
+    <div class="ambient-glow" style="top:20%; left:50%; transform:translateX(-50%);"></div>
+    <div class="container" style="max-width:600px; position:relative; z-index:2;">
+      <div style="font-family:var(--font-heading); font-size:clamp(5rem, 12vw, 9rem); font-weight:700; line-height:1; background:var(--gradient-primary); -webkit-background-clip:text; -webkit-text-fill-color:transparent; margin-bottom:1rem;">404</div>
+      <h1 style="font-size:2rem; margin-bottom:1rem;">Page Not Found</h1>
+      <p style="color:var(--text-secondary); font-size:1.05rem; margin-bottom:2.25rem;">
+        Oops! The digital pathway you are trying to reach has either been relocated or never existed in this dimension.
+      </p>
+      <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+        <a href="index.html" class="btn btn-primary btn-magnetic"><i data-lucide="home" width="16" height="16"></i> Back To Home</a>
+        <a href="contact.html" class="btn btn-outline btn-magnetic">Contact Support</a>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
