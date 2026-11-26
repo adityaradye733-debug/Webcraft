@@ -1,5 +1,5 @@
 /**
- * WEBCRAFT AGENCY — CORE INTERACTIVITY, WORKING FORMS & BLOG ENGINE
+ * Noxastudio AGENCY — CORE INTERACTIVITY, WORKING FORMS & BLOG ENGINE
  * Owner: Aditya Radye | Phone: +91 8087102969 | Email: adityaradye733@gmail.com
  */
 document.addEventListener('DOMContentLoaded', () => {
@@ -118,11 +118,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const blogPosts = {
     cwv: {
       title: 'How Technical SEO & Clean HTML/CSS/JS Boost Google Rankings in 2026',
-      meta: 'By Aditya Radye • Webcraft SEO & Engineering • 6 min read',
+      meta: 'By Aditya Radye • Noxastudio SEO & Engineering • 6 min read',
       image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1100&q=80',
       body: `
         <h2 style="font-size:1.75rem; margin-bottom:1rem;">1. Why Clean Code Matters for SEO</h2>
-        <p style="color:var(--text-secondary); margin-bottom:1.5rem;">Search engines reward fast, semantic websites. At Webcraft, every HTML, CSS, and JavaScript build is structured with clean heading hierarchies, schema-ready markup, and zero render-blocking bloat.</p>
+        <p style="color:var(--text-secondary); margin-bottom:1.5rem;">Search engines reward fast, semantic websites. At Noxastudio, every HTML, CSS, and JavaScript build is structured with clean heading hierarchies, schema-ready markup, and zero render-blocking bloat.</p>
         <h2 style="font-size:1.75rem; margin-bottom:1rem;">2. Sub-Second Largest Contentful Paint (LCP)</h2>
         <p style="color:var(--text-secondary); margin-bottom:1.5rem;">Optimizing hero assets, compressing modern WebP images, and deferring non-critical JavaScript keeps LCP under 1.2 seconds—reducing bounce rates and increasing organic conversions.</p>
         <h2 style="font-size:1.75rem; margin-bottom:1rem;">3. On-Page SEO & Conversion Alignment</h2>
@@ -266,11 +266,11 @@ document.addEventListener('DOMContentLoaded', () => {
           method: 'POST',
           headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
           body: JSON.stringify({
-            _subject: 'New Webcraft Newsletter Subscriber',
+            _subject: 'New Noxastudio Newsletter Subscriber',
             subscriber_email: emailVal
           })
         });
-        feedback.textContent = 'Subscribed! Thank you for joining Webcraft insights.';
+        feedback.textContent = 'Subscribed! Thank you for joining Noxastudio insights.';
         feedback.className = 'form-feedback success';
         input.value = '';
       } catch (err) {
@@ -317,7 +317,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       if (submitBtn) submitBtn.disabled = true;
-      statusBox.textContent = 'Sending your inquiry to Aditya Radye (Webcraft)...';
+      statusBox.textContent = 'Sending your inquiry to Aditya Radye (Noxastudio)...';
       statusBox.className = 'form-feedback';
 
       try {
@@ -325,7 +325,7 @@ document.addEventListener('DOMContentLoaded', () => {
           method: 'POST',
           headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
           body: JSON.stringify({
-            _subject: `New Webcraft Inquiry: ${service} — ${name}`,
+            _subject: `New Noxastudio Inquiry: ${service} — ${name}`,
             Name: name,
             Email: email,
             Phone: phone,
@@ -345,7 +345,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       } catch (err) {
         // Fallback to mailto if offline or blocked
-        const mailtoUrl = `mailto:adityaradye733@gmail.com?subject=${encodeURIComponent('Webcraft Project Inquiry: ' + service)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nService: ${service}\nBudget: ${budget}\n\nMessage:\n${message}`)}`;
+        const mailtoUrl = `mailto:adityaradye733@gmail.com?subject=${encodeURIComponent('Noxastudio Project Inquiry: ' + service)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nService: ${service}\nBudget: ${budget}\n\nMessage:\n${message}`)}`;
         statusBox.innerHTML = `Opening your email client to send directly to <strong>adityaradye733@gmail.com</strong>... <a href="${mailtoUrl}" style="text-decoration:underline;">Click here if it didn't open</a>.`;
         statusBox.className = 'form-feedback success';
         window.location.href = mailtoUrl;
